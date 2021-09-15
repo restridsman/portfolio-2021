@@ -1,0 +1,98 @@
+.mainContainer{
+    width: 100vw;
+    height: 100vh;
+    background: #beb9b9;
+    display:flex;
+    overflow: hidden;
+    align-items: center;
+    
+}
+
+.textBox{
+    width: 40vw;
+    align-self: center;
+    padding-left: 3vw;
+}
+
+.text{
+    padding-top:20px ;
+}
+
+.carousel{
+    float: right;
+    align-self:center ;
+    width: 60vw;
+    margin-top: 10vh;
+    padding-left: 3vw;
+}
+
+.item{
+    max-width: 20vw;
+    box-shadow: 10px 10px 25px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 25px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 25px -7px rgba(0,0,0,0.75);
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px)  {
+
+    .mainContainer{
+       
+    }  
+
+    .textBox{
+       
+    }
+
+    .textBox{
+        padding-bottom: 10vh;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px)  { 
+
+    .mainContainer{
+  
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .carousel{
+        margin-top: 7vh;
+        width: 100vw;
+        padding-left: 25vw;
+       
+    }
+
+    .textBox{
+        padding-top: 5vh;
+        /* padding-left: 0;
+        margin: 0 auto;
+        width: 80vw; */
+        padding-bottom: 10vh;
+        
+    }
+}
+
+@media only screen and (max-width: 480px) { 
+
+    .mainContainer{
+        height: fit-content;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .carousel{
+        margin-top: 7vh;
+        width: 100vw;
+        padding-left: 20vw;
+    }
+
+    .textBox{
+        padding-top: 5vh;
+        padding-left: 0;
+        margin: 0 auto;
+        width: 80vw;
+        padding-bottom: 7vh;
+    }
+}
+
