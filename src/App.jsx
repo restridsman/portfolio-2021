@@ -2,6 +2,7 @@ import React from 'react'
 
 import './App.css'
 import About from './components/About'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import Navbar from './components/Navbar'
 import ProjectOne from './components/ProjectOne'
@@ -21,6 +22,7 @@ function App() {
         <ProjectTwo />
         <ProjectThree />
         <Skills />
+        <Footer />
     </div>
   )
 }
