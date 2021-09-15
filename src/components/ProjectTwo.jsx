@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from '../styles/ProjectTwo.module.css'
 import {CarouselWrapper} from "react-pretty-carousel";
-import image2 from '../assets/WalkAway/WalkAway2.png'
-import image3 from '../assets/WalkAway/WalkAway3.png'
-import image4 from '../assets/WalkAway/WalkAway4.png'
-import image5 from '../assets/WalkAway/WalkAway5.png'
+import image1 from '../assets/walkAway/WalkAway1.png'
+import image2 from '../assets/walkAway/WalkAway2.png'
+import image3 from '../assets/walkAway/WalkAway3.png'
+import image4 from '../assets/walkAway/WalkAway4.png'
 
 
 function ProjectTwo() {
@@ -24,10 +24,10 @@ function ProjectTwo() {
            </div>
             <div className={styles.carousel}>
             <CarouselWrapper items={2.2} showControls={false} >
+                        <img className={styles.item} src={image1} alt={"image1"} />
                         <img className={styles.item} src={image2} alt={"image1"} />
                         <img className={styles.item} src={image3} alt={"image1"} />
                         <img className={styles.item} src={image4} alt={"image1"} />
-                        <img className={styles.item} src={image5} alt={"image1"} />
                 </CarouselWrapper>
             </div>
         </div>
