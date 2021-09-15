@@ -1,10 +1,7 @@
 {
-  "homepage": "https://restridsman.github.io/portfolio-2021",
   "name": "portfolio2021",
   "version": "0.0.0",
   "scripts": {
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
