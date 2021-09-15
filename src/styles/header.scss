@@ -1,0 +1,185 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  * {
+    box-sizing: inherit;
+  }
+  
+  span{
+    color: rgb(228, 122, 103);
+  }
+  
+  .header{
+    min-width: 100vw ;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #232323;
+  }
+  
+  .header.active{
+    background: #beb9b9;
+  }
+  
+  $total-lines: 6;
+  
+  .words {
+    margin: 0 auto;
+    padding: 17vh 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 58px; 
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transform: translate3d(0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  .wordsLine {
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    
+    &:nth-child(odd) {
+      transform: skew(63deg, -30deg) scaleY(.66667);
+    }
+    &:nth-child(even) {
+      transform: skew(0deg, -30deg) scaleY(1.33333);
+    }
+    
+    @for $i from 1 through $total-lines+1 {
+      &:nth-child(#{$i}) {
+        left: 40px * $i;
+      }
+    }
+  }
+  
+  .headerText {
+    height: 70px; 
+    line-height: 60px; 
+    font-size: 80px; 
+    transition: all .4s ease-in-out;
+    transform: translate3d(0, 0, 0);
+    vertical-align: top;
+    white-space: nowrap;
+  }
+  
+  .words:hover {
+    .headerText {
+      transform: translate3d(0, -(70px), 0); 
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) and (min-width: 769px)  {
+  
+    .header{
+      height: 75vh;
+    }
+  
+    .words{
+      margin-left: 20vw;
+      font-size: 35px;
+      letter-spacing: -1.8px;
+    }
+  
+    .wordsLine {
+      height: 39px; 
+  
+      @for $i from 1 through $total-lines+1 {
+        &:nth-child(#{$i}) {
+          left: 35px * $i;
+        }
+      }
+    }
+  
+    .headerText {
+      height: 40px; 
+      line-height: 41px; 
+      font-size: 55px; 
+    }
+  
+    .words:hover {
+      .headerText {
+        transform: translate3d(0, -(40px), 0); 
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 768px) and (min-width: 481px)  { 
+  
+    .header{
+      height: 70vh;
+    }
+  
+    .words{
+      margin-left: 20px;
+      font-size: 34px; 
+      letter-spacing: -1.8px;
+    }
+  
+    .wordsLine {
+      height: 35px;  
+  
+      @for $i from 1 through $total-lines+1 {
+        &:nth-child(#{$i}) {
+          left: 35px * $i;
+        }
+      }
+    }
+   
+    .headerText {
+      height: 35px;
+      line-height: 35px; 
+      font-size: 45px; 
+    }
+  
+    .words:hover {
+      .headerText {
+        transform: translate3d(0, -(35px), 0); 
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 482px) { 
+  
+    .header{
+      height: 50vh;
+    }
+  
+    .words{
+      margin-left: 5px;
+      font-size: 20px;
+      letter-spacing: -2px;
+    }
+  
+    .wordsLine {
+      height: 24px; 
+  
+      @for $i from 1 through $total-lines+1 {
+        &:nth-child(#{$i}) {
+          left: 20px * $i;
+        }
+      }
+    }
+    
+    .headerText {
+      height: 25px;
+      line-height: 25px; 
+      font-size: 30px; 
+    }
+  
+    .words:hover {
+      .headerText {
+        transform: translate3d(0, -(25px), 0); 
+      }
+    }
+  }
+  
+  

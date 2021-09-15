@@ -1,0 +1,220 @@
+*, html, body {
+  box-sizing: border-box;
+  margin: 0;
+  max-width: 100vw;   
+  color: rgb(245, 245, 245);;
+}
+
+body{
+  background: #beb9b9!important;   
+}
+
+p{
+  font-size: 1.3rem; 
+
+}
+
+h1{
+
+  font-family: 'Inter';
+  font-weight: 600;
+}
+
+a, a:hover, a:visited, a:link, a:active{
+  text-decoration: none;
+  color: white!important;
+}
+
+b{
+  opacity: 70%;
+}
+
+/* ------------------------- NAVBAR ---------------------------- */
+
+.navBar{
+  height: 10vh;
+  background-color: transparent;
+  top: 2vh;
+  padding-left: 2vw;
+  position: fixed;
+  z-index: 5;
+  text-align:right; 
+}
+
+.navLinks{
+  color: rgb(245, 245, 245);
+  padding: 10px;
+  margin-top: 2vh;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none ;
+  cursor: pointer;
+}
+
+.navLinks:hover{  
+  color:tomato;
+}
+
+.navLinks:hover, .navLinks:visited, .navLinks:link, .navLinks:active{
+  text-decoration: none;
+}
+
+/* -------------------------SECTION ONE - ABOUT---------------------------- */
+
+.aboutContainer{
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  overflow: hidden;
+  background: #232323;
+}
+
+.aboutContainer.active{
+  background: #beb9b9;
+}
+
+.aboutPhotoBox{
+  width: 45vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.aboutImg{
+  background-image: url(./assets/images/Rebi.png);
+  width: 450px;
+  height: 450px;
+  background-size: cover;
+}
+
+.aboutContent{
+  width: 50vw;
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15vh;
+}
+
+.aboutTextArea{
+  width: 50vw;
+  padding-right: 10vw;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text{
+  padding-bottom:20px ;
+}
+
+.links{
+  opacity: 80%;
+}
+
+.links:hover{
+  opacity: 100%;
+}
+
+
+.links{
+  max-width: 40px;
+  margin-right: 10px;
+}
+
+
+@media only screen and (max-width: 1024px) and (min-width: 769px)  {
+
+  p{
+      font-size: 1.1em;
+  }
+
+  .aboutContainer{
+      height: fit-content;
+  }
+
+  .aboutPhotoBox{
+      display: none;
+      height: 0;
+  }
+
+  .aboutContent{
+      width: 100vw;
+      height: fit-content;
+  }
+
+  .aboutTextArea{
+      padding-top: 5vh;
+      padding-left: 0;
+      margin: 0 auto;
+      width: 80vw;
+      margin-bottom: 7vh;
+  }
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px)  { 
+
+  p{
+      font-size: 1em;
+  }
+  
+
+  .aboutContainer{
+      justify-content: flex-start;
+      padding-top: 0vh;
+      height: fit-content;
+  }
+
+  .aboutPhotoBox{
+      display: none;
+      height: 0;
+  }
+
+  .aboutContent{
+      width: 100vw;
+      height: fit-content;
+  }
+
+  .aboutTextArea{
+      padding-left: 0;
+      margin: 0 auto;
+      width: 80vw;
+      padding-bottom: 0vh;
+  }
+
+}
+
+@media only screen and (max-width: 480px)  { 
+
+  p{
+      font-size: 1em;
+  }
+
+  .aboutContainer{
+      height: fit-content;
+  }
+
+  .aboutPhotoBox{
+      display: none;
+  }
+
+  .aboutContent{
+      width: 100vw;
+      padding-bottom: 0;
+  }
+
+  .aboutTextArea{
+      padding-top: 7vh;
+      padding-left: 0;
+      margin: 0 auto;
+      width: 80vw;
+      padding-bottom: 0vh;
+  }
+
+}
+
+
+
+
