@@ -15,7 +15,7 @@
 }
 
 .text{
-    padding-top:20px ;
+    padding-bottom:20px ;
 }
 
 .carousel{
@@ -35,14 +35,6 @@
 
 @media only screen and (max-width: 1024px) and (min-width: 769px)  {
 
-    .mainContainer{
-       
-    }  
-
-    .textBox{
-       
-    }
-
     .textBox{
         padding-bottom: 10vh;
     }
@@ -51,7 +43,7 @@
 @media only screen and (max-width: 768px) and (min-width: 481px)  { 
 
     .mainContainer{
-  
+
         flex-direction: column-reverse;
         justify-content: center;
     }
@@ -65,9 +57,9 @@
 
     .textBox{
         padding-top: 5vh;
-        /* padding-left: 0;
+        padding-left: 0;
         margin: 0 auto;
-        width: 80vw; */
+        width: 80vw;
         padding-bottom: 10vh;
         
     }
