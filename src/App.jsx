@@ -5,6 +5,7 @@ import About from './components/About'
 import Header from './components/Header'
 import Navbar from './components/Navbar'
 import ProjectOne from './components/ProjectOne'
+import ProjectTwo from './components/ProjectTwo'
 
 function App() {
  
@@ -15,6 +16,7 @@ function App() {
         <Header />
         <About />
         <ProjectOne />
+        <ProjectTwo />
     </div>
   )
 }
