@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'
 import ProjectOne from './components/ProjectOne'
 import ProjectThree from './components/ProjectThree'
 import ProjectTwo from './components/ProjectTwo'
+import Skills from './components/Skills'
 
 function App() {
  
@@ -19,6 +20,7 @@ function App() {
         <ProjectOne />
         <ProjectTwo />
         <ProjectThree />
+        <Skills />
     </div>
   )
 }

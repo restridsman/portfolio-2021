@@ -1,0 +1,213 @@
+.mainContainer{
+    width: 100vw;
+    height: 70vh;
+    background: #aba5a5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.progressBars{
+    display:flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    height: 50vh;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 2vw;
+}
+
+.box{
+    min-width: 40%;
+    height: 150px;
+    min-height: 150px;
+    background: rgba(114, 114, 114, 0.246);
+    box-shadow: 10px 10px 25px -7px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 10px 10px 25px -7px rgba(0,0,0,0.55);
+    -moz-box-shadow: 10px 10px 25px -7px rgba(0,0,0,0.55);
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 0vh;
+}
+
+.htmlIcon, .cssIcon, .jsIcon, .reactIcon {
+    width: 70px;
+    height: 70px;
+    background-size: cover; 
+    opacity: 60%;
+    margin: auto 0;
+}
+.htmlIcon{
+    background-image: url(../assets/icons/html.png);
+}
+
+.cssIcon{
+    background-image: url(../assets/icons/css.png);
+}
+
+.jsIcon{
+    background-image: url(../assets/icons/js.png);
+}
+
+.reactIcon{
+    background-image: url(../assets/icons/react.png);
+    width: 80px;
+    height: 80px;
+    opacity: 60%;
+    background-position: center;
+}
+
+.progressBar{
+    background-color: rgba(245, 245, 245, 0.219);
+    border-radius: 50px;
+    width: 300px;
+    height: 26px;
+    box-shadow: 10px 10px 25px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 25px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 25px -7px rgba(0,0,0,0.75);
+    margin-top: 20px;
+}
+
+.staminaHTML, .staminaCSS, .staminaJS, .staminaReact {
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    background: linear-gradient(311deg, rgba(255,59,59,1) 0%, rgba(255,154,24,1) 100%);
+    opacity: 50%;
+    border-radius: 50px;
+    height: 26px;
+}
+
+.staminaHTML{
+    width: 90%;
+}
+
+.staminaCSS{
+    width: 80%;
+}
+
+.staminaJS{
+    width: 50%;
+}
+
+.staminaReact{
+    width: 50%;
+}
+
+.language{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.836);
+    padding-top: 40px;
+    font-size: 20px;
+}
+
+.version{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.procent{
+    padding-top: 40px;
+    font-size: 20px;
+    color: white;
+    opacity: 80%;
+}
+
+
+@media only screen and (max-width: 1024px) and (min-width: 769px)  {
+
+    .mainContainer{
+        height: fit-content;
+        align-content: center;
+    }
+
+    .progressBars{
+        width: 100vw;
+        height: fit-content;
+        margin: 7vh 0 7vh 0 ;
+    }
+
+    .box{
+        min-width: 60vw;
+    }
+
+    .iconBox1, .iconBox2, .iconBox3, .iconBox4, .iconBox5 {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px)  { 
+
+    .mainContainer{
+        height: fit-content;
+        justify-content: center;
+       
+    }
+
+    .progressBars{
+        width: 100vw;
+        height: fit-content;
+        margin: 7vh 0 7vh 0 ;
+
+    }
+
+    .box{
+        min-height: min-content;
+        margin: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .iconBox1, .iconBox2, .iconBox3, .iconBox4, .iconBox5 {
+        display: none;
+    }
+
+    .htmlIcon, .cssIcon, .jsIcon, .reactIcon {
+        display: none;
+    } 
+
+}
+
+@media only screen and (max-width: 480px)  { 
+
+    .mainContainer{
+        height: fit-content;
+        padding-top: 5vh; 
+    }
+
+    .textBox{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .progressBars{
+        width: 100vw;
+        height: 100vh;
+        padding: 0; 
+    }
+   
+    .progressBar{
+        width: 230px;
+    }
+
+    .box{
+        margin: 10px;
+        overflow: hidden;
+        padding: 0 20px 0 20px;
+        max-width: 90vw;
+    }
+
+    .iconBox1, .iconBox2, .iconBox3, .iconBox4, .iconBox5 {
+        display: none;
+    }
+
+    .htmlIcon, .cssIcon, .jsIcon, .reactIcon {
+        display: none;
+    } 
+
+}
+
+
