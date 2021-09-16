@@ -9,50 +9,58 @@ function Skills() {
                 <Fade bottom>
                     <div className={styles.box}>
                         <div className={styles.htmlIcon}></div>
-                        <div className={styles.info}>
-                            <h3 className={styles.language}>HTML</h3>
+                        <div className={styles.left}>
+                            <div className={styles.info}>
+                                <h3 className={styles.language}>HTML</h3>
+                                <h3 className={styles.procent}>&nbsp;&nbsp;90%</h3>
+                            </div>
                             <div className={styles.progressBar}>
                                 <div className={styles.staminaHTML}></div>
-                            </div>
-                        </div>
-                        <h3 className={styles.procent}>90%</h3>
+                            </div>  
+                        </div>  
                     </div>
                 </Fade>
                 <Fade bottom>
                     <div className={styles.box}>
                         <div className={styles.cssIcon}></div>
-                        <div className={styles.info}>
-                            <h3 className={styles.language}>CSS</h3>
+                        <div className={styles.left}>
+                            <div className={styles.info}>
+                                <h3 className={styles.language}>CSS</h3>
+                                <h3 className={styles.procent}>&nbsp;&nbsp;80%</h3>
+                            </div>
                             <div className={styles.progressBar}>
                                 <div className={styles.staminaCSS}></div>
-                            </div>
-                        </div>
-                        <h3 className={styles.procent}>80%</h3>
+                            </div> 
+                        </div>           
                     </div>
                 </Fade>
                 <Fade bottom>
                     <div className={styles.box}>
                         <div className={styles.jsIcon}></div>
-                        <div className={styles.info}>
-                            <h3 className={styles.language}>JavaScript</h3>
+                        <div className={styles.left}>
+                            <div className={styles.info}>
+                                <h3 className={styles.language}>JavaScript</h3>
+                                <h3 className={styles.procent}>&nbsp;&nbsp;50%</h3>
+                            </div>
                             <div className={styles.progressBar}>
                                 <div className={styles.staminaJS}></div>
                             </div>
                         </div>
-                        <h3 className={styles.procent}>50%</h3>
-                    </div>
+                    </div>                   
                 </Fade>
                 <Fade bottom>
                     <div className={styles.box}>
                         <div className={styles.reactIcon}></div>
-                        <div className={styles.info}>
-                            <h3 className={styles.language}>React</h3>
+                        <div className={styles.left}>
+                            <div className={styles.info}>
+                                <h3 className={styles.language}>React</h3>
+                                <h3 className={styles.procent}>&nbsp;&nbsp;50%</h3>
+                            </div>
                             <div className={styles.progressBar}>
                                 <div className={styles.staminaReact}></div>
                             </div>
                         </div>
-                        <h3 className={styles.procent}>50%</h3>
-                    </div>
+                    </div>   
                 </Fade>                
             </div>
         </div>
