@@ -64,6 +64,7 @@ b{
   width: 100vw;
   height: 80vh;
   display: flex;
+
   overflow: hidden;
   background: #232323;
 }
@@ -145,7 +146,7 @@ b{
   }
 
   .aboutTextArea{
-      padding-top: 5vh;
+      padding-top: 7vh;
       padding-left: 0;
       margin: 0 auto;
       width: 80vw;
@@ -203,6 +204,7 @@ b{
   .aboutContent{
       width: 100vw;
       padding-bottom: 0;
+      height: fit-content;
   }
 
   .aboutTextArea{
@@ -210,7 +212,7 @@ b{
       padding-left: 0;
       margin: 0 auto;
       width: 80vw;
-      padding-bottom: 0vh;
+      padding-bottom: 7vh;
   }
 
 }
