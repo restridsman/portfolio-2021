@@ -201,6 +201,7 @@
 
     .box{
         overflow: hidden;
+        height: 110px;
     }
 
 }
