@@ -7,7 +7,7 @@ function ProjectThree() {
         <div>
               <div className={styles.mainContainer}>
              <div className={styles.videoBox}>
-                <video className={styles.video} autoPlay muted loop playsinline>
+                <video className={styles.video} autoPlay={true} loop={true} controls={false} playsInline muted >
                     <source src={Video} type="video/mp4"/>
                 </video>
             </div>
