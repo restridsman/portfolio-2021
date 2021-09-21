@@ -12,7 +12,7 @@ function ProjectOne() {
                 <p><i>Webbutveckling, September 2020</i></p>
             </div>
             <div className={styles.videoBox}>
-                <video className={styles.video} autoPlay muted loop playsinline>
+                <video className={styles.video} autoPlay={true} loop={true} controls={false} playsInline muted >
                     <source src={Video} type="video/mp4"/>
                 </video>
             </div>
